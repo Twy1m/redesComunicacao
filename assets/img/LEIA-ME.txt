@@ -1,0 +1,34 @@
+ILUSTRAÇÕES DAS MATÉRIAS
+========================
+
+Cada matéria usa uma ilustração técnica em SVG (desenhos de topologia nas cores do site).
+Para trocar por uma foto: salve a foto nesta pasta e, no index.html, troque o nome do
+arquivo .svg correspondente pelo da foto (ex.: 06-profinet.svg -> 06-profinet.jpg).
+Se um arquivo não existir, a imagem some e aparecem os blocos coloridos.
+
+  01-introducao.svg          Redes de comunicação
+  02-piramide.svg            Tecnologias por nível
+  03-ethernet.svg            Ethernet (IEEE 802.3)
+  04-wifi.svg                Wi-Fi (IEEE 802.11)
+  05-fibra.svg               Fibra óptica: multimodo e monomodo
+  06-profinet.svg            Profinet
+  07-ethernet-ip.svg         EtherNet/IP
+  08-modbus-rtu.svg          Modbus RTU
+  09-profibus-dp.svg         Profibus DP
+  10-profibus-pa.svg         Profibus PA
+  11-hart.svg                HART e WirelessHART
+  12-ff-h1.svg               Foundation Fieldbus H1
+  13-ff-hse.svg              Foundation Fieldbus HSE
+  14-as-i.svg                AS-i (Actuator Sensor Interface)
+  15-io-link.svg             IO-Link
+  16-devicenet.svg           DeviceNet
+  17-ethercat.svg            EtherCAT
+  18-modbus-tcp.svg          Modbus TCP
+  19-canopen.svg             CANopen
+  20-mqtt.svg                MQTT
+  21-opc-ua.svg              OPC UA
+  22-cc-link.svg             CC-Link
+  23-comparativo.svg         Quadro comparativo
+  24-conclusao.svg           Convergência
+  25-referencias.svg         Referências
+  26-contato.svg             Contato

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   COMPLEMENTOS DO SITE "REDES INDUSTRIAIS"
+   Usa os mesmos tokens de css/styles.css (cores, fontes, filetes).
+   ========================================================================== */
+
+/* Pirâmide com 5 níveis próprios */
+.pyramid__item:nth-child(4) .pyramid__btn,
+.pyramid__item:nth-child(5) .pyramid__btn { background: var(--c-taupe); }
+.pyramid .pyramid__item.pyramid__item--focus .pyramid__btn { background: var(--accent); color: #fff; }
+
+/* Lista de tecnologias (links para as matérias) */
+.tech-links { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tech-links a {
+  display: inline-block; padding: 6px 9px;
+  border: 1.5px solid var(--accent); color: var(--accent); background: #fbfaf7;
+  font: 600 12px/1.2 var(--font-sans);
+}
+.tech-links a:hover, .tech-links a:focus-visible { background: var(--accent); color: #fff; outline: none; }
+
+/* Palavras-chave */
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; }
+.tags span {
+  padding: 4px 8px; background: var(--c-sand); color: var(--ink);
+  font: 600 10px/1.3 var(--font-sans); letter-spacing: .06em; text-transform: uppercase;
+}
+
+/* Ficha rápida das tecnologias: valores um pouco maiores */
+.facts li { font-size: 14px; color: var(--ink); }
+
+/* Fluxo com marcadores em letra */
+.flow li span { text-transform: lowercase; }
+
+/* Filtros do quadro comparativo */
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+.filters__btn {
+  padding: 8px 12px; cursor: pointer;
+  background: none; border: 1.5px solid var(--accent); color: var(--accent);
+  font: 600 11px/1 var(--font-sans); letter-spacing: .04em;
+}
+.filters__btn:hover { background: var(--c-sage); }
+.filters__btn[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.filters__btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+/* Quadro comparativo (rola na horizontal dentro da própria caixa) */
+.cmp-wrap { margin-top: 0; border-top: 1.5px solid var(--ink); }
+.cmp-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cmp { min-width: 1180px; width: 100%; border-collapse: collapse; font-family: var(--font-sans); }
+.cmp thead th {
+  position: sticky; top: 0; text-align: left; vertical-align: bottom; padding: 10px 10px 8px 0;
+  border-bottom: 1px solid var(--line); background: var(--bg);
+  font: 500 10px/1.2 var(--font-sans); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft);
+}
+.cmp td, .cmp tbody th {
+  padding: 10px 10px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top;
+  font-size: 13px; line-height: 1.35; color: var(--ink-soft); text-align: left;
+}
+.cmp tbody th { position: sticky; left: 0; z-index: 1; background: var(--bg); min-width: 110px; padding-left: 0; }
+.cmp thead th:first-child { left: 0; z-index: 2; }
+.cmp tbody th a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.cmp tbody tr:hover td, .cmp tbody tr:hover th { background: #e9e6df; }
+.cmp tr[hidden] { display: none; }
+.cmp-source { margin-top: 10px; text-transform: none; letter-spacing: 0; font-size: 11px; line-height: 1.4; }
+
+/* Referências sem link */
+.refs__t { margin: 0 !important; font: 400 14px/1.45 var(--font-serif); color: var(--ink) !important; }
+
+/* Contatos: só dois cartões */
+@media (min-width: 768px) { .contacts { grid-template-columns: repeat(2, 1fr); } }
