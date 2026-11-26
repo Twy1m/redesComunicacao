@@ -24,4 +24,3 @@ js/accordion.js  js/pyramid.js  js/menu.js
 assets/img/      ilustrações SVG de cada matéria (ver LEIA-ME.txt)
 ```
 
-Site estático: basta abrir `index.html` ou publicar no GitHub Pages.
